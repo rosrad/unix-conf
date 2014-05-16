@@ -76,17 +76,14 @@
 (revive-plus:demo)
 
 (add-to-list 'load-path "~/source/golang/go/misc/emacs")
-(autoload 'go-mode "go-mode-load" "go-mode." t)
+(require 'go-mode)
+
 
 (add-to-list 'load-path "~/source/el/flycheck/")
 (add-to-list 'load-path "~/source/el/goflymake/")
 (require 'go-flycheck)
 (require 'go-flymake)
 (require 'flycheck)
-;(autoload 'go-flymake "go-flymake" "Go flymake" t)
-;(autoload 'go-flycheck "go-flycheck" "Go flycheck" t)
-;(autoload 'flycheck "flycheck" "flycheck" t)
-;(autoload 'go-mode-load)
 
 (add-to-list 'load-path "~/source/el/yasnippet")
 ;(setq yas-snippet-dirs "~/.emacs.d/plugins/yasnippet/")

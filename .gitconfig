@@ -6,6 +6,7 @@
     ci = commit -v
     rmt = remote
     ca = commit -a
+    cam = commit -a -m
 [push]
 	default = matching
 [core]
