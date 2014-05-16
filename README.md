@@ -1,4 +1,4 @@
-unix-conf
-=========
+README
 
-config files  about the emacs git and bashrc
+
+this is just some experiment.
