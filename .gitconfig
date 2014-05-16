@@ -1,0 +1,10 @@
+[user]
+	email = justnow.ren@gmail
+	name = renbo
+[alias]
+    st = status
+    ci = commit -v
+[push]
+	default = matching
+[core]
+	excludesfile = ~/source/config/git/.gitignore
