@@ -5,6 +5,7 @@
     st = status
     ci = commit -v
     rm = remote
+    ca = commit -a
 [push]
 	default = matching
 [core]
