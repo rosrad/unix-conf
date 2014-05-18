@@ -117,14 +117,10 @@
 ;; octave-mode
 ;;(autoload 'octave-mode "octave-mode" "Loding octave-mode" t)
 ;;(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
+(load-file "~/.emacs.d/init.el")
 
-
-
-
-
-
-(add-to-list 'load-path "~/local/share/emacs/site-lisp")
-(require 'magit)
+;(add-to-list 'load-path "~/local/share/emacs/site-lisp")
+;(require 'magit)
 
 (add-to-list 'load-path "~/source/el/cl-lib/")
 (require 'cl-lib)

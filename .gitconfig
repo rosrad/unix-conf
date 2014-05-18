@@ -7,7 +7,22 @@
     rmt = remote
     ca = commit -a
     cam = commit -a -m
+    df = difftool
+
 [push]
 	default = matching
 [core]
 	excludesfile = ~/source/config/git/.gitignore
+[diff]
+        tool = ediff
+        guitool = ediff
+
+[difftool "ediff"]
+        cmd = ~/source/config/git/ediff.sh $LOCAL $REMOTE $MERGED
+
+[merge]
+        tool = ediff
+
+[mergetool "ediff"]
+        cmd = ~/source/config/git/ediff.sh $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
