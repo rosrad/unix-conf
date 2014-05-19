@@ -66,22 +66,11 @@ export monc=$work/monc
 export http_proxy="http://proxy.nagaokaut.ac.jp:8080"
 export https_proxy="http://proxy.nagaokaut.ac.jp:8080"
 export ftp_proxy="http://proxy.nagaokaut.ac.jp:8080"
-#for alias
-alias em="emacs -nw"
-alias emc="emacsclient -t"
-
-m_log=~/work/tmp/matlab.log
-run_matlab() {
-    pwd=`pwd`
-    echo "run matlab $@"
-    echo "add path : ${pwd}"
-    cmd="addpath ${pwd}"
-    matlab -nojvm -nodisplay -nosplash -r "${cmd};$@;exit" -logfile $m_log > /dev/null 2>&1
-}
-
-alias mcheck="tail -f ${m_log}"
-alias mrun=run_matlab
 #if [ `hostname` != "node13" ] ; then
 #    `ssh node13`
 #fi
 
+#add the alias script
+if [ -f ~/.alias.sh ];then
+    . ~/.alias.sh
+fi

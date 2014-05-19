@@ -114,6 +114,9 @@
 ;; Enable CEDET feature support for MATLAB code. (Optional)
 (matlab-cedet-setup)
 
+
+(push (substitute-in-file-name "~/source/el/ztree/") load-path)
+(require 'ztree-diff)
 ;; octave-mode
 ;;(autoload 'octave-mode "octave-mode" "Loding octave-mode" t)
 ;;(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))

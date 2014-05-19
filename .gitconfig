@@ -8,7 +8,8 @@
     ca = commit -a
     cam = commit -a -m
     df = difftool
-
+    br = branch
+    co = checkout
 [push]
 	default = matching
 [core]
