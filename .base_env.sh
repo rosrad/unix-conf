@@ -33,4 +33,4 @@ export ftp_proxy="http://proxy.nagaokaut.ac.jp:8080"
 ## for send mail
 export MAIL_DIR=~/source/mail/
 export MAIL_SENDER=$MAIL_DIR/sender/
-#if [ `hostname` != "node13" ] ; then
+
