@@ -12,9 +12,9 @@ m_log=~/work/tmp/matlab.log
 run_matlab() {
     pwd=`pwd`
     echo "run matlab $@"
-    echo "add path : ${pwd}"
-    cmd="addpath ${pwd}"
-    matlab -nojvm -nodisplay -nosplash -r "${cmd};$@;exit" -logfile $m_log > /dev/null 2>&1
+    cmd="addpath ${pwd} ; addpath /home/14/ren/source/matlab;"
+    wrap="'$@'"
+    matlab -nojvm -nodisplay -nosplash -r "${cmd};wrap_template(${wrap});exit" -logfile $m_log
 }
 
 #some function for debug 
