@@ -8,9 +8,12 @@
     cm = commit -m
     cam = commit -a -m
     df = difftool
+    dst = diff --name-status
+    cst = show --name-status
     br = branch
     co = checkout
-    lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since=2.weeks"
+    lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since=2days -n10"
+    lgs= "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since=2days -n10  --name-status"
     cp = cherry-pick
     mg = merge    
 [push]
