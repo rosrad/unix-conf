@@ -74,6 +74,7 @@
 (require 'revive+)
 (setq revive-plus:all-frames t)
 (revive-plus:demo)
+;(add-hook 'auto-save-hook #'(lambda () (call-interactively #'desktop-save)))
 
 (add-to-list 'load-path "~/source/golang/go/misc/emacs")
 (require 'go-mode)
@@ -124,6 +125,9 @@
 
 ;(add-to-list 'load-path "~/local/share/emacs/site-lisp")
 ;(require 'magit)
+
+(add-hook 'term-mode-hook (lambda()
+        (setq yas-dont-activate t)))
 
 (add-to-list 'load-path "~/source/el/cl-lib/")
 (require 'cl-lib)

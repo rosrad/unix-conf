@@ -4,7 +4,7 @@
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] &&   . /usr/share/bash-completion/bash_completion
 unset SSH_ASKPASS
 # User specific aliases and functions
 

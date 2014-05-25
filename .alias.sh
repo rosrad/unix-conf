@@ -6,7 +6,8 @@ alias emc="emacsclient -t"
 alias mcheck="tail -f ${m_log}"
 alias mrun=run_matlab
 alias dfind=find_in_dir
-
+alias pk="pkill -9 -u ren "
+alias pg="pgrep -u ren"
 #some functions to run matlab script in a console terminal. 
 m_log=~/work/tmp/matlab.log
 run_matlab() {
