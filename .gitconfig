@@ -7,15 +7,26 @@
     rmt = remote
     cm = commit -m
     cam = commit -a -m
-    df = difftool
-    dst = diff --name-status
-    cst = show --name-status
+    df = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev} ; } ; f"
     br = branch
     co = checkout
-    lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since=2days -n10"
-    lgs= "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since=2days -n10  --name-status"
+    cod = "! f() { rev=${1-$(git rev-parse HEAD)}; git diff --name-only ${rev}^..${rev} |xargs -I{} git co ${rev} -- {} ; } ; f "
+    ls = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n10"
+    ll = "!git ls --numstat -5"
+    log-diff = "! f() { rev=${2-$(git rev-parse HEAD)}; git ll ${rev}~$1..${rev}; }; f"
+    ld = "! git log-diff 1 "
+    ld1 = "! git log-diff 2 "
+    ld2 = "! git log-diff 3 "
+    ld3 = "! git log-diff 4 "
+    l0= "!git ll -1"
+    l1= "!git ll -2"
+    l2= "!git ll -3"
+    l3= "!git ll -4"
+    rh = reset --hard
     cp = cherry-pick
     mg = merge    
+    cn = clean -dn
+    cf = clean -df
 [push]
 	default = matching
 [core]
