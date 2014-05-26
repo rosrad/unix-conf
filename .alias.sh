@@ -13,7 +13,7 @@ m_log=~/work/tmp/matlab.log
 run_matlab() {
     pwd=`pwd`
     echo "run matlab $@"
-    cmd="addpath ${pwd} ; addpath /home/14/ren/source/matlab;"
+    cmd="addpath ${pwd} ; addpath /home/14/ren/source/matlab/config;"
     wrap="'$@'"
     matlab -nojvm -nodisplay -nosplash -r "${cmd};wrap_template(${wrap});exit" -logfile $m_log
 }

@@ -11,7 +11,7 @@
     dfc = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev}^..${rev} ${@:2}; } ; f"
     br = branch
     co = checkout
-    cod = "! f() { rev=${1-$(git rev-parse HEAD)}; git diff --name-only ${rev}^..${rev} |xargs -I{} git co ${rev} -- {} ; } ; f "
+    cod = "! f() { rev=${1-$(git rev-parse HEAD)}; git diff --name-only ${rev}^..${rev} ${@:2} |xargs -I{} git co ${rev} -- {} ; } ; f "
     ls = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n10"
     ll = "!git ls --numstat -5"
     log-df = "! f() { rev=${2-$(git rev-parse HEAD)}; git ls ${rev}~$1..${rev} ${@:2} ;}; f"
