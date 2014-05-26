@@ -8,6 +8,7 @@
     cm = commit -m
     cam = commit -a -m
     df = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev} ; } ; f"
+    dfc = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev}^..${rev} ; } ; f"
     br = branch
     co = checkout
     cod = "! f() { rev=${1-$(git rev-parse HEAD)}; git diff --name-only ${rev}^..${rev} |xargs -I{} git co ${rev} -- {} ; } ; f "
@@ -24,6 +25,8 @@
     l2= "!git ll -3"
     l3= "!git ll -4"
     rh = reset --hard
+    rs  = reset --soft
+    r = reset --mixed 
     cp = cherry-pick
     cr = cherry
     
@@ -45,7 +48,7 @@
         guitool = ediff
 
 [difftool "ediff"]
-        cmd = ~/source/config/git/ediff.sh $LOCAL $REMOTE $MERGED
+        cmd = ~/source/config/git/ediff.sh $LOCAL $REMOTE
 
 [merge]
         tool = ediff
