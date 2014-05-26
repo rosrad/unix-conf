@@ -319,7 +319,7 @@ If this option is nil, don't switch other `multi-term' buffer."
     ("C-r" . isearch-backward)
     ("C-m" . term-send-raw)
     ("C-k" . kill-line)
-    ("C-d" . kill-word)
+    ("C-d" . term-send-del)
     ("C-w" . kill-region)
     ("C-SPC" . set-mark-command)
     ("M-f" . term-send-forward-word)

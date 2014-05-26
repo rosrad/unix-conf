@@ -7,15 +7,15 @@
     rmt = remote
     cm = commit -m
     cam = commit -a -m
-    df = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev} ; } ; f"
-    dfc = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev}^..${rev} ; } ; f"
+    df = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev} ${@:2} ; } ; f"
+    dfc = "! f() { rev=${1-$(git rev-parse HEAD)}; git difftool ${rev}^..${rev} ${@:2}; } ; f"
     br = branch
     co = checkout
     cod = "! f() { rev=${1-$(git rev-parse HEAD)}; git diff --name-only ${rev}^..${rev} |xargs -I{} git co ${rev} -- {} ; } ; f "
     ls = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n10"
     ll = "!git ls --numstat -5"
-    log-df = "! f() { rev=${2-$(git rev-parse HEAD)}; git ls ${rev}~$1..${rev}; }; f"
-    log-diff = "! f() { rev=${2-$(git rev-parse HEAD)}; git ll ${rev}~$1..${rev}; }; f"
+    log-df = "! f() { rev=${2-$(git rev-parse HEAD)}; git ls ${rev}~$1..${rev} ${@:2} ;}; f"
+    log-diff = "! f() { rev=${2-$(git rev-parse HEAD)}; git ll ${rev}~$1..${rev} ${@:2} ;}; f"
     ld = "! git log-diff 1 "
     ld1 = "! git log-diff 2 "
     ld2 = "! git log-diff 3 "
