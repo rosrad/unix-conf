@@ -1,4 +1,8 @@
 ##this is some basic enviroment varables
+
+
+# for cmd prompt
+export PS1="[\h:\W]$"
 ##for GOPATH
 GOPATH=~/source/golang/go/:~/source/golang/workspace/
 export GOPATH
