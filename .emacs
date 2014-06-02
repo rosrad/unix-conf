@@ -1,6 +1,7 @@
 (global-linum-mode t)
 (desktop-save-mode 1)
- (add-to-list 'command-switch-alist '("(make-frame-visible)" .
+(menu-bar-mode -1)
+(add-to-list 'command-switch-alist '("(make-frame-visible)" .
                  (lambda (s))))
 (require 'server)
 (unless (server-running-p)

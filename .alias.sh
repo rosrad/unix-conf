@@ -8,6 +8,8 @@ alias mrun=run_matlab
 alias dfind=find_in_dir
 alias pk="pkill -9 -u ren "
 alias pg="pgrep -u ren"
+alias ll="ls -lh"
+alias ssh13="ssh node13"
 #some functions to run matlab script in a console terminal. 
 m_log=~/work/tmp/matlab.log
 run_matlab() {
