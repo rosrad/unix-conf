@@ -24,8 +24,6 @@
 
 ;; Nyancat mode!
 ;(nyan-mode 1)
-;multi-term
-(require 'multi-term)
 
 ;; Enable org-mode
 (require 'org)
