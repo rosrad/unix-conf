@@ -27,28 +27,27 @@
                markdown-mode
                matlab-mode
                ;nxhtml
-	       ztree
+               ztree
                pydoc-info
                scss-mode
-	       python-mode
-	       pymacs
-	       ropemacs
+               python-mode
+               pymacs
+               ropemacs
                popup
                jedi
                ;nyan-mode
-	       flycheck
-	       go-flymake
-	       go-autocomplete
-	       wacspace
-	       revive-plus
-	       yasnippet
-	       multi-term
+               flycheck
+               go-flymake
+               go-autocomplete
+               wacspace
+               revive-plus
+               yasnippet
+               multi-term
                helm
                helm-descbinds
-	       highlight-current-line
-	       fill-column-indicator
-               ))   
-
+               highlight-current-line
+               fill-column-indicator
+               ))
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
 (setq el-get-git-shallow-clone t)

@@ -3,13 +3,12 @@
 ;------------;
 
 ; highlight the current line
-(add-to-list 'load-path "~/.emacs.d/highlight-current-line-0.57")
-(require 'highlight-current-line)
-(global-hl-line-mode t)
-(setq highlight-current-line-globally t)
-(setq highlight-current-line-high-faces nil)
-(setq highlight-current-line-whole-line nil)
-(setq hl-line-face (quote highlight))
+;(require 'highlight-current-line)
+;(global-hl-line-mode t)
+;(setq highlight-current-line-globally t)
+;(setq highlight-current-line-high-faces nil)
+;(setq highlight-current-line-whole-line nil)
+;(setq hl-line-face (quote highlight))
 
 ; don't blink the cursor
 (blink-cursor-mode nil)
