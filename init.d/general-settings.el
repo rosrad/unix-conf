@@ -15,17 +15,6 @@
 (setq inhibit-startup-screen 1)
 ; don't show the menu bar
 (require 'tool-bar)
-(tool-bar-mode 0)
-; don't show the scroll bar
-(if window-system (scroll-bar-mode 0))
-
-
-; set command key to be meta instead of option
-(if (system-is-mac)
-    (setq ns-command-modifier 'meta))
-
-; number of characters until the fill column 
-(setq-default fill-column 85)
 
 ; each line of text gets one line on the screen (i.e., text will run
 ; off the left instead of wrapping around onto a new line)
@@ -39,12 +28,6 @@
   (add-to-list 'default-frame-alist '(width . 178)))
 (custom-set-frame-size)
 (add-hook 'before-make-frame-hook 'custom-set-frame-size)
-
-; window modifications
-;; (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
-;; (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
-;; (global-set-key (kbd "S-C-<down>") 'shrink-window)
-;; (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 ; always use spaces, not tabs, when indenting
 (setq-default indent-tabs-mode nil)
@@ -67,11 +50,6 @@
 (setq require-final-newline 1)
 ; add a new line when going to the next line
 (setq next-line-add-newlines t)
-
-; show the current line and column numbers in the stats bar as well
-(line-number-mode 1)
-(column-number-mode 1)
-
 
 ; make sure transient mark mode is enabled (it should be by default,
 ; but just in case)
@@ -99,3 +77,5 @@
 (setq auto-save-default nil)
 
 (provide 'general-settings)
+
+

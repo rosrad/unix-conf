@@ -8,15 +8,15 @@
 ; don't show the startup screen
 (setq inhibit-startup-screen t)
 ; don't show the menu bar
-(menu-bar-mode nil)
+(menu-bar-mode -1)
 ; don't show the tool bar
 (require 'tool-bar)
 (tool-bar-mode nil)
 ; don't show the scroll bar
-;(scroll-bar-mode nil)
+;(scroll-bar-mode -1)
 
 ; number of characters until the fill column 
-;(setq fill-column 70)
+(setq fill-column 90)
 
 ; specify the fringe width for windows -- this sets both the left and
 ; right fringes to 10
@@ -35,7 +35,7 @@
 (setq truncate-partial-width-windows t)
 
 ; display line numbers to the right of the window
-(global-linum-mode t)
+;(global-linum-mode t)
 ; show the current line and column numbers in the stats bar as well
 (line-number-mode t)
 (column-number-mode t)
