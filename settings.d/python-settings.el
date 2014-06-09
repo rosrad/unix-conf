@@ -15,13 +15,12 @@
 (setq py-force-py-shell-name-p t)
 
 ; switch to the interpreter after executing code
-(setq py-shell-switch-buffers-on-execute-p t)
-(setq py-switch-buffers-on-execute-p t)
+;(setq py-switch-buffers-on-execute-p nil)
 ; don't split windows
 (setq py-split-windows-on-execute-p nil)
 ; try to automagically figure out indentation
 (setq py-smart-indentation t)
-
+(require 'ipython-mode)
 ; pymacs
 
 (autoload 'pymacs-apply "pymacs")
@@ -34,8 +33,8 @@
 
 ; ropemacs
 (require 'pymacs)
-(setq ropemacs-enable-shortcuts nil)
-(setq ropemacs-local-prefix "C-c C-p")
+(setq ropemacs-enable-shortcuts t)
+;(setq ropemacs-local-prefix "C-c C-p")
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
 
@@ -70,3 +69,4 @@
     (add-to-list 'ac-sources 'ac-source-ropemacs)))
 
 (provide 'python-settings)
+

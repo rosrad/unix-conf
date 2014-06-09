@@ -31,6 +31,7 @@
                pydoc-info
                scss-mode
                python-mode
+               ipython-mode
                pymacs
                ropemacs
                popup
@@ -48,6 +49,8 @@
                helm-descbinds
                highlight-current-line
                fill-column-indicator
+               google-translate
+               google-this
                ))
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
