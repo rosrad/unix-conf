@@ -18,8 +18,6 @@
 (set-face-background 'ac-candidate-face "white")
 (set-face-background 'ac-selection-face "magenta")
 (set-face-foreground  'ac-candidate-face "green")
-(add-to-list 'ac-modes 'go-mode)
-(add-to-list 'ac-modes 'matlab-mode)
 (add-to-list 'ac-dictionary-files "~/.emacs.d/ac-dict")
 
 (provide 'auto-complete-settings)

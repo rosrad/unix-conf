@@ -43,6 +43,7 @@
                wacspace
                revive-plus
                yasnippet
+               yasnippet-snippets
                auto-complete-yasnippet
                multi-term
                helm
