@@ -5,7 +5,8 @@
 ;(require 'server)
 ;(unless (server-running-p)
 ;  (server-start))
-
+;
+;(setq debug-on-error t)
 (setq current-language-environment "English")
 
 ;; Disable the splash screen (to enable it agin, replace the t with 0)

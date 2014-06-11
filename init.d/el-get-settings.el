@@ -46,6 +46,7 @@
                yasnippet-snippets
                auto-complete-yasnippet
                multi-term
+               multiple-cursors
                helm
                helm-descbinds
                highlight-current-line

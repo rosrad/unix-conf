@@ -25,6 +25,10 @@
 ;; Nyancat mode!
 ;(nyan-mode 1)
 
+;;mark-multiple
+(require 'multiple-cursors)
+(global-set-key (kbd "C-c a") 'mc/mark-all-dwim)
+(global-set-key (kbd "C-c s") 'mc/edit-lines)
 ;; Enable org-mode
 (require 'org)
 ;; Make org-mode work with files ending in .org
