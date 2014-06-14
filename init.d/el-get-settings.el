@@ -38,6 +38,7 @@
                jedi
                ;nyan-mode
                flycheck
+               key-chord
                go-flymake
                go-autocomplete
                wacspace
@@ -47,6 +48,8 @@
                auto-complete-yasnippet
                multi-term
                multiple-cursors
+               ;visible-mark
+               show-marks
                helm
                helm-descbinds
                highlight-current-line

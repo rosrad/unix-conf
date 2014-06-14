@@ -89,7 +89,7 @@
   )
 
 
-(global-set-key (kbd "C-c w") 'copy-word)
+;(global-set-key (kbd "C-c w") 'copy-word)
 ;(global-set-key (kbd "C-c l") 'copy-line)
 ;(global-set-key (kbd "C-c p") 'copy-paragraph)
 
