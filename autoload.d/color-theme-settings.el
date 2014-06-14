@@ -3,8 +3,6 @@
 ;-----------------;
 
 ; use the "Subtle Hacker" color theme as a base for the custom scheme
-(require 'color-theme-solarized)
-(color-theme-solarized-light)
 (custom-set-faces
 ;;  '(default ((t (:inherit nil :stipple nil :background "grey30" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 83 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
 ;; ;;  ;; '(cursor ((t (:background "firebrick1" :foreground "black"))))
@@ -29,8 +27,8 @@
  )
 ;; ;;  ;; '(mouse ((t (:background "Grey" :foreground "black"))))
 ;; ;;  '(trailing-whitespace ((((class color) (background dark)) (:background "firebrick1")))))
-
-
+;(require 'color-theme-solarized)
+;(load-theme 'solarized-light t)
 
 (provide 'color-theme-settings)
 
