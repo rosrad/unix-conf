@@ -7,7 +7,6 @@
 (color-theme-solarized-light)
 (custom-set-faces
 ;;  '(default ((t (:inherit nil :stipple nil :background "grey30" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 83 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
-;; ;;  ;; '(border ((t nil)))
 ;; ;;  ;; '(cursor ((t (:background "firebrick1" :foreground "black"))))
 ;;  '(font-lock-comment-face ((t (:foreground "light green"))))
 ;;  '(font-lock-comment-delimiter-face ((default (:inherit font-lock-comment-face :weight ultra-bold)) (((class color) (min-colors 0)) nil)))
