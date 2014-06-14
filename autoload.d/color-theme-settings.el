@@ -5,7 +5,7 @@
 ; use the "Subtle Hacker" color theme as a base for the custom scheme
 (require 'color-theme-solarized)
 (color-theme-solarized-light)
-
+;;(load-theme 'solarized-light t)
 (custom-set-faces
 ;;  '(default ((t (:inherit nil :stipple nil :background "grey30" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 83 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
 ;; ;;  ;; '(border ((t nil)))
