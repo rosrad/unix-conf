@@ -55,6 +55,7 @@
                highlight-current-line
                fill-column-indicator
                google-translate
+               youdao-dict
                google-this
                ))
 ; first enable shallow clone, so we don't need to clone the entire
