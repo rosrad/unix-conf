@@ -11,7 +11,14 @@
 
 ;; now I am using the youdao dict for search word
 ;; for youdao-dict
-(autoload 'youdao-dict "youdao-dict")
 (global-set-key (kbd "C-c t") 'youdao-dict)
+(require 'youdao-dict)
+
+
+
+
+
+
+(provide translate-settings)
 
 

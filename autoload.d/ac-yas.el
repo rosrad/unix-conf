@@ -3,3 +3,4 @@
 (require 'yas-settings)
 (require 'auto-complete-settings)
 (require 'auto-complete-yasnippet)
+(require 'translate-settings)
