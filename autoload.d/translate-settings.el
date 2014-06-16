@@ -19,6 +19,6 @@
 
 
 
-(provide translate-settings)
+(provide 'translate-settings)
 
 

@@ -56,7 +56,7 @@
                fill-column-indicator
                google-translate
                youdao-dict
-               google-this
+               ;google-this
                ))
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
