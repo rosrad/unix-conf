@@ -16,6 +16,7 @@
 		   "general-settings"
 		   "el-get-settings"
 		   ))
+(add-to-list 'load-path "~/.emacs.d/settings.d/")
 (setq de-settings-directory
       (expand-file-name "autoload.d" de-emacs-config-directory))
 (dolist (file (directory-files de-settings-directory t "\\.el$"))

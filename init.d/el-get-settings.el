@@ -56,7 +56,11 @@
                fill-column-indicator
                google-translate
                youdao-dict
-               ;google-this
+               ;; google-this
+               basic-edit-toolkit
+               emacs-w3m
+               ;; w3m-session
+               ;; w3m-type-ahead
                ))
 ; first enable shallow clone, so we don't need to clone the entire
 ; history of every project
