@@ -59,6 +59,7 @@
                ;; google-this
                basic-edit-toolkit
                emacs-w3m
+               org2blog
                ;; w3m-session
                ;; w3m-type-ahead
                ))
