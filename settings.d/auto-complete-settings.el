@@ -21,7 +21,8 @@
 (add-to-list 'ac-dictionary-files "~/.emacs.d/ac-dict")
 (global-auto-complete-mode t)
 
-(add-to-list 'ac-modes 'matlab-mode)
+;; (add-to-list 'ac-modes 'matlab-mode)
 (add-to-list 'ac-modes 'matlab-shell-mode)
-(add-to-list 'ac-modes 'go-mode)
+(add-to-list 'ac-modes 'html-mode)
+;; (add-to-list 'ac-modes 'go-mode)
 (provide 'auto-complete-settings)

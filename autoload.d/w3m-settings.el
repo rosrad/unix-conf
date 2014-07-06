@@ -8,6 +8,7 @@
 ;; optional keyboard short-cut
 (global-set-key (kbd "C-c m") 'browse-url-at-point)
 
+(setq w3m-use-cookies t)
 (setq w3m-coding-system 'utf-8
       w3m-file-coding-system 'utf-8
       w3m-file-name-coding-system 'utf-8
