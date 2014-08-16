@@ -12,6 +12,9 @@
 (add-hook 'html-mode-hook
           '(lambda ()
              (yas-minor-mode)))
+(add-hook 'org-mode-hook
+          '(lambda ()
+             (yas-minor-mode)))
 (provide 'yas-settings)
 
 

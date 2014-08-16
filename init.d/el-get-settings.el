@@ -38,7 +38,7 @@
                popup
                jedi
                ;; nyan-mode
-               flycheck
+               ;; flycheck
                key-chord
                go-flymake
                go-autocomplete
@@ -61,6 +61,7 @@
                basic-edit-toolkit
                emacs-w3m
                org2blog
+               auto-complete-auctex
                ;; w3m-session
                ;; w3m-type-ahead
                ))

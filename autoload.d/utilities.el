@@ -3,8 +3,10 @@
 ;; ---------------;
 
 ;; for fly check feature
-(require 'flycheck)
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (require 'flycheck)
+
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
+
 ;; Git
 
 (require 'magit)
