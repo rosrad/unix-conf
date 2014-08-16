@@ -54,10 +54,10 @@
 ;; (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;for make the flychecker error showed in a mini buffer
-;; (defun my-flymake-show-help ()
-;;   (when (get-char-property (point) 'flymake-overlay)
-;;    (let ((help (get-char-property (point) 'help-echo)))
-;;     (if help (message "%s" help)))))
+(defun my-flymake-show-help ()
+  (when (get-char-property (point) 'flymake-overlay)
+   (let ((help (get-char-property (point) 'help-echo)))
+    (if help (message "%s" help)))))
 
 (add-hook 'post-command-hook 'my-flymake-show-help)
 
